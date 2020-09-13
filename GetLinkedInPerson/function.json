@@ -1,0 +1,18 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "mytimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "* * 1 1 1-12 *"
+    },
+    {
+      "name": "outputBlob",
+      "type": "blob",
+      "direction": "out",
+      "path": "luisdatalakecopper/linkedin/PastEmployeesResults.csv",
+      "connection": "AzureWebJobsStorage"
+    }
+  ]
+}
